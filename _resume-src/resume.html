@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aaryan Parab — Resume</title>
+<style>
+    @page { size: A4; margin: 11mm 12mm; }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+        --ink:    #14181d;
+        --body:   #2c333b;
+        --muted:  #5c6673;
+        --accent: #0f6f52;
+        --rule:   #c8cfd6;
+    }
+
+    body {
+        font-family: "Segoe UI", "Calibri", Arial, sans-serif;
+        font-size: 9.5pt;
+        line-height: 1.34;
+        color: var(--body);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* ------------------------------ header ------------------------------ */
+    header { border-bottom: 2px solid var(--accent); padding-bottom: 5px; margin-bottom: 9px; }
+
+    h1 {
+        font-size: 21pt;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        color: var(--ink);
+        line-height: 1.05;
+    }
+
+    .tagline {
+        font-size: 10.4pt;
+        font-weight: 600;
+        color: var(--accent);
+        margin-top: 2px;
+    }
+
+    .contact {
+        margin-top: 5px;
+        font-size: 9.1pt;
+        color: var(--muted);
+    }
+
+    .contact a { color: var(--muted); text-decoration: none; }
+    .contact span.sep { margin: 0 5px; color: var(--rule); }
+
+    /* ----------------------------- sections ----------------------------- */
+    h2 {
+        font-size: 9.6pt;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: var(--accent);
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 2px;
+        margin: 10px 0 5px;
+    }
+
+    p.summary { text-align: justify; }
+
+    /* ------------------------------- jobs ------------------------------- */
+    .job { margin-bottom: 8px; page-break-inside: avoid; }
+    .job:last-child { margin-bottom: 2px; }
+
+    .job__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .job__role { font-size: 10.2pt; font-weight: 700; color: var(--ink); }
+    .job__role .company { font-weight: 600; }
+    .job__dates { font-size: 9pt; color: var(--muted); white-space: nowrap; font-weight: 600; }
+
+    .job__context {
+        font-size: 9.3pt;
+        color: var(--muted);
+        font-style: italic;
+        margin: 2px 0 4px;
+    }
+
+    ul { list-style: none; margin-top: 3px; }
+
+    li {
+        position: relative;
+        padding-left: 12px;
+        margin-bottom: 2px;
+    }
+
+    li::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 0.52em;
+        width: 3.5px;
+        height: 3.5px;
+        background: var(--accent);
+        border-radius: 50%;
+    }
+
+    li b, li strong { color: var(--ink); font-weight: 600; }
+
+    /* ----------------------------- education ---------------------------- */
+    .edu { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+    .edu__what { color: var(--ink); }
+    .edu__what b { font-weight: 700; }
+    .edu__where { font-size: 9.3pt; color: var(--muted); }
+    .edu__dates { font-size: 9pt; color: var(--muted); white-space: nowrap; font-weight: 600; }
+
+    /* ------------------------------ skills ------------------------------ */
+    .skills { display: grid; grid-template-columns: 118px 1fr; row-gap: 4px; column-gap: 8px; }
+
+    .skills dt {
+        font-size: 9pt;
+        font-weight: 700;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+    }
+
+    .skills dd { font-size: 9.8pt; }
+
+    .langs { font-size: 9.8pt; }
+
+    /* page 2 starts at Education so the skills table never splits across pages */
+    h2.break-before { break-before: page; page-break-before: always; margin-top: 0; }
+    .skills, .edu, .langs { break-inside: avoid; page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Aaryan Parab</h1>
+    <p class="tagline">Game Developer &mdash; Unity &middot; C# &middot; Multiplayer &middot; Android</p>
+    <p class="contact">
+        aaryanparab.official@gmail.com
+        <span class="sep">|</span> +91 7304684010
+        <span class="sep">|</span> Mumbai, Maharashtra, India
+        <span class="sep">|</span> linkedin.com/in/aaryan-parab-755a271ba
+        <span class="sep">|</span> github.com/AaryanParab
+        <span class="sep">|</span> aaryanparab.github.io
+    </p>
+</header>
+
+<h2>Summary</h2>
+<p class="summary">
+    Game developer with a Postgraduate Degree in Game Design from Kingston University and a strong
+    foundation in information technology and software development. Currently shipping live Unity
+    content for a large Arabic-language Android social gaming platform, working across real-time
+    multiplayer networking (Photon), in-game voice and text chat, RTL localization, and gameplay UI.
+    Experienced in building immersive 2D and 3D games in Unity and Unreal Engine, with a track record
+    of rapid prototyping and a habit of shipping a new playable build weekly. Looking for a gameplay
+    or multiplayer programming role where deep systems work and fast iteration both matter.
+</p>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+    <div class="job__head">
+        <div class="job__role">Game Developer, <span class="company">Dot9 Games</span>, Mumbai, India</div>
+        <div class="job__dates">06/2026 &ndash; Present</div>
+    </div>
+    <p class="job__context">
+        Unity / Android &middot; Arabic-language World Cup 2026 social gaming app hosting a hub of
+        real-time multiplayer titles (Baloot, Carrom, Ludo, Arcade Penalty, Brick Breaker and mini-games)
+    </p>
+    <ul>
+        <li>
+            Delivered <b>600+ commits in 3 months</b> to a live Unity Android title, working across
+            multiplayer networking, gameplay logic, editor tooling, localization and UI implementation
+            in a 15-developer codebase.
+        </li>
+        <li>
+            <b>Re-architected 4-player Baloot multiplayer</b> from pure lockstep to a Master-authoritative
+            action sequencer over four delivery phases, eliminating permanent client state divergence and
+            a split-outcome bug that showed both teams a win and paid match rewards to the losing player.
+        </li>
+        <li>
+            Hardened <b>Photon matchmaking and turn synchronisation</b> &mdash; fixed duplicate room
+            creation, join/retry failures, partial 4-player matches, mid-match stalls and desync
+            timeouts across Baloot, Ludo and Carrom.
+        </li>
+        <li>
+            Built <b>DotNine.Social</b>, a reusable Unity package for in-game text and voice chat
+            (Photon-backed chat, pluggable voice provider on VideoSDK, ScriptableObject-driven room
+            controller, editor mock for offline testing); integrated it into Carrom and migrated the
+            football title onto the same package.
+        </li>
+        <li>
+            Fixed <b>Arabic RTL rendering across 12+ screens</b> &mdash; shaping text once before display,
+            removing double-shaping and mixed-direction countdowns, and wiring I2 Localization keys for
+            matchmaking, game-over, notification, season-pass and creator flows.
+        </li>
+        <li>
+            Implemented and polished large parts of the app's front end: creator/influencer system,
+            history, notifications, leaderboards, settings, season pass, spin wheel, splash and logo
+            animations, pause and game-over screens, and notch-safe layouts.
+        </li>
+        <li>
+            Built a Unity <b>editor tool that registers new mini-games into the hub catalogue</b>,
+            replacing manual per-title wiring; authored the networking, voice-chat and RTL design and
+            handover documents the team works from.
+        </li>
+    </ul>
+</div>
+
+<div class="job">
+    <div class="job__head">
+        <div class="job__role">Data Quality Analyst, <span class="company">Sigma AI</span>, London, United Kingdom</div>
+        <div class="job__dates">12/2024 &ndash; 12/2025</div>
+    </div>
+    <ul>
+        <li>Ensured 99% dataset accuracy in training data for AI and ML projects across multiple European clients.</li>
+        <li>Implemented workflow automations that reduced data processing time by 15% and improved consistency.</li>
+        <li>Collaborated with engineers to refine data annotation pipelines, improving model performance metrics.</li>
+    </ul>
+</div>
+
+<div class="job">
+    <div class="job__head">
+        <div class="job__role">Game Developer Intern, <span class="company">Caden Games</span>, Mumbai, India</div>
+        <div class="job__dates">01/2021 &ndash; 06/2021</div>
+    </div>
+    <ul>
+        <li>Engineered 2D and 3D Android games in Unity with a focus on gameplay, physics and user experience.</li>
+        <li>Mentored and trained 10 new recruits, resolving queries and easing their integration into the team.</li>
+        <li>Integrated Google Ads ahead of publication and tracked app performance post-launch.</li>
+        <li>Shipped a new game weekly, building a diverse portfolio through rapid prototyping.</li>
+    </ul>
+</div>
+
+<h2>Projects</h2>
+
+<div class="job">
+    <div class="job__head">
+        <div class="job__role">Dungeon Slash &mdash; <span class="company">3D Grind/Looter RPG</span> (Unity 6, URP, C#)</div>
+        <div class="job__dates">06/2026 &ndash; Present</div>
+    </div>
+    <p class="job__context">
+        In-development PC RPG built with one other developer &middot; my scope: player, combat, weapons and enemy
+    </p>
+    <ul>
+        <li>
+            Built the first-person character controller on Unity's <b>CharacterController</b> &mdash; sprint and
+            crouch with height blending, jump on custom gravity, and clamped mouse look.
+        </li>
+        <li>
+            Implemented the input layer on Unity's <b>new Input System</b> behind a single manager that separates
+            held input from pressed-this-frame, plus layer-masked raycast melee wired to animation and
+            <b>ScriptableObject</b> weapon stats with quick-slot switching.
+        </li>
+        <li>
+            Owned project setup: URP conversion, legacy input removal, a Photon PUN2 to <b>Fusion</b>
+            evaluation for the multiplayer layer, Git LFS, and the terrain and baked-lighting pass.
+        </li>
+    </ul>
+</div>
+
+<h2 class="break-before">Education</h2>
+
+<div class="edu">
+    <div>
+        <div class="edu__what"><b>Postgraduate Degree, Game Design</b></div>
+        <div class="edu__where">Kingston University, Kingston upon Thames, England, UK</div>
+    </div>
+    <div class="edu__dates">01/2023 &ndash; 02/2024</div>
+</div>
+
+<div class="edu">
+    <div>
+        <div class="edu__what"><b>Bachelor's Degree, Engineering in Information Technology</b></div>
+        <div class="edu__where">A. P. Shah Institute of Technology, Thane, India</div>
+    </div>
+    <div class="edu__dates">08/2018 &ndash; 06/2022</div>
+</div>
+
+<h2>Skills</h2>
+<dl class="skills">
+    <dt>Engines</dt>
+    <dd>Unity (2D / 3D / UI Toolkit &amp; uGUI), Unreal Engine 5, Unity XR Toolkit</dd>
+
+    <dt>Languages</dt>
+    <dd>C#, Java, Python (Flask)</dd>
+
+    <dt>Multiplayer</dt>
+    <dd>Photon PUN2, real-time state synchronisation, authoritative sequencing, matchmaking, desync
+        diagnosis &amp; resync, VideoSDK voice chat</dd>
+
+    <dt>Platform</dt>
+    <dd>Android build &amp; release, asset bundles, remote config, Google Ads integration</dd>
+
+    <dt>Systems</dt>
+    <dd>Gameplay mechanics, game state machines, level design, UI/UX implementation, animation,
+        rapid prototyping</dd>
+
+    <dt>Localization</dt>
+    <dd>I2 Localization, Arabic RTL text shaping &amp; layout</dd>
+
+    <dt>Tools</dt>
+    <dd>Git &amp; GitHub, Unity Editor tooling, technical design &amp; handover documentation,
+        data quality analysis, workflow automation</dd>
+</dl>
+
+<h2>Languages</h2>
+<p class="langs">English &mdash; Native &nbsp;&middot;&nbsp; Hindi &mdash; Native &nbsp;&middot;&nbsp; Marathi &mdash; Native</p>
+
+</body>
+</html>
